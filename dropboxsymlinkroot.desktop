@@ -23,7 +23,7 @@ MimeType=all/all
 Actions=moveToDropboxAndLinkRoot;
 X-KDE-Priority=TopLevel
 X-KDE-StartupNotify=false
-Icon=application-x-trash
+Icon=dropboxstatus-busy
 
 [Desktop Action moveToDropboxAndLinkRoot]
 Name=Move To Dropbox and Link as Root
