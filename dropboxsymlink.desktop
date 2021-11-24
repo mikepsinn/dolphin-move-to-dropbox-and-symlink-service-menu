@@ -27,6 +27,7 @@ Icon=dropboxstatus-busy
 
 [Desktop Action moveToDropboxAndLink]
 Name=Move To Dropbox and Link
+Name[nl]=Verplaatsen naar Dropbox en snelkoppeling maken
 Icon=dropboxstatus-busy
 #Exec=/bin/sh -c ";mkdir -p $(dirname ~/Dropbox$path) && mv %f ~/Dropbox$path && sudo ln -sT ~/Dropbox$path %f"
 Exec=mkdir -p $(dirname ~/Dropbox%f) && mv %f ~/Dropbox%f && sudo ln -sT ~/Dropbox%f %f
