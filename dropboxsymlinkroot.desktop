@@ -27,6 +27,7 @@ Icon=dropboxstatus-busy
 
 [Desktop Action moveToDropboxAndLinkRoot]
 Name=Move To Dropbox and Link as Root
+Name[nl]=Verplaatsen naar Dropbox en snelkoppeling maken (beheerder)
 Icon=dropboxstatus-busy
 #Exec=/bin/sh -c ";mkdir -p $(dirname ~/Dropbox$path) && mv %f ~/Dropbox$path && sudo ln -sT ~/Dropbox$path %f"
 Exec=if [ "$XDG_SESSION_TYPE" = "wayland" ]; then xhost +si:localuser:root && pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true mkdir -p $(dirname ~/Dropbox%f) && mv %f ~/Dropbox%f && sudo ln -sT ~/Dropbox%f %f && chmod -R 777 $(dirname ~/Dropbox%f) && xhost -si:localuser:root ; else pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true mkdir -p $(dirname ~/Dropbox%f) && mv %f ~/Dropbox%f && sudo ln -sT ~/Dropbox%f %f && chmod -R 777 $(dirname ~/Dropbox%f); fi;
